@@ -1,0 +1,133 @@
+.form {
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(175, 227, 227); */
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 600px;
+    height: 100px;
+}
+
+.field1 > * {
+min-width: 30%;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.field2 > div{
+   min-width: 66%;
+}
+
+.field3 > div{
+    min-width: 66%;
+}
+
+.field4 {
+    min-height: 300px;
+}
+
+.field4 > p{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.address-field {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content:space-between
+}
+
+.street-adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.address-field {
+    min-width: 66%;
+}
+
+.address1 > input {
+    min-width: 100%;
+}
+
+.city-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+button {
+    margin: 2em;
+    border: none;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    border-radius: 3px;
+    width: 100px;
+    height: 35px;
+        
+}
+
+p{
+    min-width: 33%
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid cornflowerblue ;
+    border-radius: 4px;
+}
+
+input {
+    border: 1px solid cornflowerblue;
+    height: 30px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* to display label below every input field */
+.first-name , .last-name, .number-field,.email-field , .address1,.address2,.postal-code,.city,.postal{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+
+label {
+    font-size: x-small;
+}
+
+@media (max-width:620px) {
+    section{
+        min-width: 280px;
+        flex-direction: column;
+    }
+
+   .city-field {
+    flex-direction: column;
+   }
+
+   .field2{
+    padding-top: 2em;
+   }
+
+}
